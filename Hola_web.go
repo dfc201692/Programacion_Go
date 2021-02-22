@@ -9,7 +9,7 @@ import (
 func main() {
 
 	http.HandleFunc("/holamundo", func(w http.ResponseWriter, r *http.Request) {
-		io.WriteString(w, "Holaaaaa!")
+		io.WriteString(w, "Holaaaaa Ingeniero!")
 	})
 	http.HandleFunc("/", handler)
 	http.ListenAndServe(":8000", nil)
